@@ -1,3 +1,4 @@
+import 'package:fl_clone_mentalhealth_app/components/emotion_section.dart';
 import 'package:fl_clone_mentalhealth_app/components/header_section.dart';
 import 'package:fl_clone_mentalhealth_app/components/search_section.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,14 @@ class _HomePageState extends State<HomePage> {
         child: Scaffold(
       backgroundColor: Color(0xff2C7FBD),
       body: Column(
-        children: [HeaderSection(), SearchSection()],
+        children: [
+          HeaderSection(),
+          SearchSection(),
+          SizedBox(
+            height: 25,
+          ),
+          EmotionSection()
+        ],
       ),
     ));
   }
